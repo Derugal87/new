@@ -1,0 +1,142 @@
+.personal-info {
+	margin: auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.personal-info-box {
+	margin: auto;
+	margin-top: 20px;
+	width: 30%;
+	background-color: white;
+	box-shadow:
+		rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+	border-radius: 10px;
+	padding: 20px 0;
+	position: relative;
+}
+.personal-img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.personal-msg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.personal-msg-icon {
+	cursor: pointer;
+}
+
+.edit-icon {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	border: none;
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+
+.custom-icon {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	color: #404756;
+}
+
+.callRecieved {
+	width: 15px;
+}
+
+.callMade {
+	width: 15px;
+}
+
+.action-buttons .save {
+	margin-right: 10px;
+}
+
+@media (max-width: 1400px) {
+	.personal-img {
+		width: 180px;
+		height: 180px;
+	}
+	.custom-icon {
+		width: 25px;
+		height: 25px;
+	}
+}
+
+@media (max-width: 1250px) {
+	.personal-info-box {
+		width: 35%;
+	}
+	.personal-img {
+		width: 170px;
+		height: 170px;
+	}
+	.custom-icon {
+		width: 25px;
+		height: 25px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.personal-img {
+		width: 150px;
+		height: 150px;
+	}
+}
+
+@media (max-width: 950px) {
+	.personal-img {
+		width: 100px;
+		height: 100px;
+	}
+	.custom-icon {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media (max-width: 800px) {
+	.personal-info-box {
+		width: 90%;
+	}
+	.custom-icon {
+		width: 17px;
+		height: 17px;
+	}
+	.personal-info-box-nick {
+		font-size: 14px;
+	}
+	.personal-info-box h3 {
+		font-size: 12px;
+	}
+}
+/* iphone 12pro */
+@media (max-width: 390px) {
+	.personal-img {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@media (max-width: 540px) {
+	/* .personal-info-box {
+		width: 60%;
+	} */
+	.action-buttons .save {
+		font-size: 14px;
+	}
+
+	.action-buttons .cancel {
+		font-size: 14px;
+	}
+}

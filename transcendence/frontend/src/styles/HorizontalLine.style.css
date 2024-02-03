@@ -1,0 +1,8 @@
+.horizontal-line {
+	border: none;
+	height: 1px;
+	background-color: #087ea4;
+	margin: 10px 0;
+	width: 90%;
+	margin: auto;
+}

@@ -1,0 +1,64 @@
+Dependency Notes
+
+- UserModule =>
+- UserService => AuthService, HttpService, UserEntity, TypeORM
+- UserEntity => ChannelMembershipEntity,
+- UserGateway => UserService,
+- UserController => UserService, UserEntity
+
+- ChannelModule
+- ChannelService => UserService, ChannelMembershipService, ChannelMembershipDto, ChannelEntity, TypeORM, UserEntity
+- ChannelGateway => ChannelService, UserService
+- ChannelController => ChannelService, ChannelEntity
+- ChannelEntity => ChannelMembershipEntity, UserEntity
+
+- ChannelMembershipModule
+- ChannelMembershipService => UserService, ChannelService, ChannelMembershipEntity, TypeORM, UserEntity, ChannelEntity
+- ChannelMembershipGateway =>
+- ChannelMembershipController => ChannelMembershipService, ChannelMembershipEntity, UserEntity
+- ChannelMembershipEntity => UserEntity, ChannelEntity
+
+- FriendshipModule
+- FriendshipService => UserService, FriendshipEntity, TypeORM, UserEntity
+- FriendshipGateway =>
+- FriendshipController => FriendshipService, FriendshipEntity
+- FriendshipEntity => UserEntity
+
+- FriendRequestModule
+- FriendRequestService => UserService, FriendRequestEntity, TypeORM, UserEntity, FriendshipService
+- FriendRequestGateway => FriendRequestService
+- FriendRequestController => FriendRequestService, FriendRequestEntity, UserService
+- FriendRequestEntity => UserEntity
+
+- GameModule =>
+- GameService => GameEntity, TypeORM
+- GameController => GameService, GameEntity
+- GameEntity =>
+
+- GamePlayerModule
+- GamePlayerService => GamePlayerEntity, TypeORM, UserEntity, GameEntity
+  GamePlayerGateway
+- GamePlayerController => GamePlayerService, GamePlayerEntity
+- GamePlayerEntity => UserEntity, GameEntity
+
+- MatchModule
+- MatchService => MatchEntity, TypeORM, UserEntity
+- MatchController => MatchService, MatchEntity
+- MatchEntity => UserEntity
+
+- DirectMessageModule
+- DirectMessageService => DirectMessageEntity, TypeORM, UserService
+- DirectMessageGateway => DirectMessageService
+- DirectMessageController => DirectMessageService, DirectMessageEntity
+- DirectMessageEntity => UserEntity
+
+- GroupMessageModule
+- GroupMessageService => GroupMessageEntity, TypeORM, UserService, ChannelService
+- GroupMessageGateway => GroupMessageService
+- GroupMessageController => GroupMessageService, GroupMessageEntity
+- GroupMessageEntity => UserEntity, ChannelEntity
+
+- AuthModule
+- AuthService
+- AuthGateway
+- AuthController => UserService, CreateUserDto

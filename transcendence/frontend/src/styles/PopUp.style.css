@@ -1,0 +1,30 @@
+.main-permission button {
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 5px 10px;
+	font-size: 14px;
+	color: #333;
+	border-radius: 3px;
+	transition: background-color 0.2s ease;
+}
+
+.main-permission button:hover {
+	background-color: hsla(207, 4%, 46%, 0.08);
+}
+
+.close-btn {
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	margin: 10px 10px;
+	padding: 5px 10px;
+	color: black;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.close-btn:hover {
+	background-color: hsla(207, 4%, 46%, 0.08);
+}

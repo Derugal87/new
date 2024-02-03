@@ -1,0 +1,36 @@
+.appContainer1 {
+	display: flex;
+	/* align-items: center; */
+	gap: 20px; /* Adjust the gap between buttons */
+	margin-top: 20px;
+}
+
+/* Pop-up buttons container */
+.game-buttons {
+	display: flex;
+	flex-direction: row; /* Display buttons horizontally */
+}
+
+/* Style for the buttons */
+.game-button {
+	padding: 15px 30px; /* Adjust button padding to make it bigger */
+	font-size: 18px; /* Adjust font size */
+	background-color: #007bff; /* Button background color */
+	color: white; /* Text color */
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease; /* Add a smooth transition for hover effect */
+	margin: 20px; /* Add spacing between buttons */
+
+	/* Hover effect */
+	&:hover {
+		background-color: #0056b3; /* Change background color on hover */
+	}
+}
+
+.input-style {
+	margin: 10px;
+	border-radius: 5px;
+	border: 1px solid;
+}

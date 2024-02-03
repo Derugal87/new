@@ -1,0 +1,151 @@
+.message-content-box {
+	display: flex;
+	gap: 1.5rem;
+	position: relative;
+}
+
+.rotate-icon {
+	transform: rotate(45deg);
+	padding: 20px;
+	background: white;
+	border-radius: 50%;
+	color: #087ea4;
+	margin: 10px 0;
+}
+.rotate-icon:hover {
+	background: #087ea4;
+	border-radius: 50%;
+	color: white;
+	cursor: pointer;
+}
+
+.chat-container {
+	max-width: 67rem;
+	margin: 0 auto;
+	padding: 10px; /* Add padding or adjust as needed */
+	overflow-y: auto; /* Enable vertical scroll if content overflows */
+	overflow-x: hidden;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+/* Chat Message Styles */
+.chat-msg {
+	margin: 10px 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	width: 85%;
+}
+
+.chat-msg-current-user {
+	align-self: flex-end;
+	background-color: rgb(220, 248, 197);
+}
+
+.chat-msg-info {
+	display: flex;
+	gap: 0.5rem;
+}
+
+/* User Avatar Styles */
+.chat-msg-img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.chat-msg-title {
+	width: 100%;
+}
+/* Message Text Styles */
+.chat-msg-title h5 {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+/* Time Stamp Styles */
+.chat-container .chat-msg .time {
+	color: var(--grayColor);
+	font-size: 0.7rem;
+	margin-top: 0.5rem;
+	color: #087ea4;
+}
+
+.msg-content-parag {
+	/* position: 'relative'; */
+	/* display: flex; */
+	/* width: 300px; */
+}
+
+.msg-content-parag p {
+	overflow-wrap: anywhere;
+}
+
+.msg-content-parag button {
+	border: none;
+	background: none;
+	outline: none;
+	box-shadow: none;
+	cursor: pointer;
+	color: #087ea4;
+}
+
+.invitation-link {
+	cursor: pointer; /* Make the cursor change to a pointer on hover to indicate it's clickable */
+	padding: 16px; /* Add some padding for spacing */
+	border: 1px solid #ccc; /* Add a border to create a visual separation */
+	border-radius: 5px; /* Round the corners a bit */
+	background-color: #f8f8f8; /* Apply a background color */
+	transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+
+	/* Center the text content horizontally */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	/* Add some spacing between elements */
+	gap: 8px;
+}
+
+.invitation-link:hover {
+	background-color: #e0e0e0; /* Change the background color on hover */
+}
+
+.invitation-title {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333; /* Text color */
+}
+
+.channel-name {
+	font-size: 16px;
+	color: #666; /* Text color */
+}
+
+.channel-name span {
+	font-weight: 700;
+}
+
+.join-token {
+	font-size: 14px;
+	color: #4084d1; /* Text color */
+}
+
+.removeId {
+	padding: 0.6rem;
+	cursor: pointer;
+	margin: 10px;
+}
+
+.removeId:hover {
+	background-color: hsla(207, 4%, 46%, 0.08);
+	border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+	.invitation-link {
+		padding: 0;
+	}
+}

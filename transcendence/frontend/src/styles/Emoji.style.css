@@ -1,0 +1,16 @@
+.emoji-main {
+	font-family: sans-serif;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+}
+
+.emoji-main .EmojiPickerReact {
+	--epr-picker-height: 500px;
+}
+
+.show-emoji {
+	padding-bottom: 15px;
+}

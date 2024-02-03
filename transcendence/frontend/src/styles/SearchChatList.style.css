@@ -1,0 +1,26 @@
+.join-channel {
+	display: flex;
+}
+
+.join-channel input {
+	border: 1px solid #087ea4;
+	border-radius: 10px;
+	padding: 5px;
+  margin: 0 10px;
+}
+
+.join-button {
+	padding: 10px 15px;
+	font-size: 12px;
+	border: none;
+	border-radius: 20px 0 20px 0;
+	background-color: #087ea4;
+	color: white;
+  font-weight: 700;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+	background-color: #2980b9;
+}

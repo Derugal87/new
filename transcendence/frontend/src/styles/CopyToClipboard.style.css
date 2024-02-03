@@ -1,0 +1,38 @@
+/* CopyToClipboard.css */
+.copy-container {
+	text-align: center;
+	margin: 20px auto;
+	border: 1px solid #ccc;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.copy-container h3 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+.copy-container p {
+	background-color: #f7f7f7;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.copy-container button {
+	display: block;
+	margin: 10px auto;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.copy-container button:hover {
+	background-color: #0056b3;
+}

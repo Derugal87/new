@@ -1,0 +1,121 @@
+.intro_box {
+	background-color: #edeff3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: auto;
+}
+
+.intro_box2 {
+	background-color: #edeff3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: auto;
+	margin-top: 30px;
+	padding: 10px;
+	gap: 10px;
+}
+
+.intro_div {
+	background-color: #edeff3;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin: auto;
+}
+
+.intro_div2 {
+	background-color: #edeff3;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+
+	padding: 10px;
+}
+
+.intro_video {
+	width: 550px;
+	height: 300px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.intro_header {
+	color: #000;
+	margin-top: 30px;
+	margin-left: 20px;
+	display: flex;
+	justify-content: center;
+}
+.intro_header2 {
+	color: #000;
+	background-color: #edeff3;
+	margin: 0;
+	display: block;
+}
+.intro_header3 {
+	color: #000;
+	background-color: #edeff3;
+	margin: 10px;
+	display: block;
+}
+
+.circular-image-wrapper {
+	margin-top: 20px;
+	width: 150px; /* Adjust the desired width for the circular image */
+	height: 150px; /* Adjust the desired height for the circular image */
+	overflow: hidden; /* Hide any part of the image outside the circular shape */
+}
+
+.intro_pics {
+	width: 100%; /* Make the image cover the entire circular area */
+	height: 100%; /* Make the image cover the entire circular area */
+	object-fit: cover; /* Ensure the image is resized and cropped to fit the circular area */
+	border-radius: 50%;
+}
+
+.social-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-right: 10px;
+}
+
+.ok {
+	color: black;
+	background-color: #000;
+	margin-right: 10px;
+	font-size: 2rem;
+}
+
+@media (max-width: 700px) {
+	.intro_video {
+		width: 300px;
+		height: 180px;
+	}
+	.intro_header {
+		font-size: 18px;
+	}
+	.intro_header2 {
+		font-size: 16px;
+	}
+	.intro_header3 {
+		font-size: 16px;
+	}
+	.intro_pics {
+		width: 80%;
+		height: 80%;
+	}
+}
+
+@media (max-width: 560px) {
+	.intro_div {
+		flex-direction: column;
+	}
+	.intro_div2 {
+		flex-direction: column;
+	}
+}

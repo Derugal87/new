@@ -1,0 +1,8 @@
+.match-history-text {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}

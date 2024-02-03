@@ -1,0 +1,152 @@
+.notification-badge {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+}
+
+.badge {
+	position: absolute;
+	top: -8px;
+	right: -16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	color: white;
+	font-size: 12px;
+	border-radius: 50%;
+}
+
+.popup2 {
+	position: fixed;
+	top: 90px;
+	right: 130px;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	border: 1px solid gray;
+	padding: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	z-index: 9999;
+	max-width: 400px; /* Adjust the max-width as needed */
+	border-radius: 10px;
+}
+
+.popup2.hovered {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup p {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.popup-buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.popup-buttons button {
+	margin-right: 5px;
+}
+
+.popup-close {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	color: rgb(0, 0, 0);
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+	transition: opacity 0.3s;
+	opacity: 0;
+}
+
+.popup-close.visible {
+	opacity: 1;
+}
+
+.popup-close:hover {
+	text-decoration: underline;
+}
+
+.list-friends {
+	padding: 5px;
+}
+
+.friend-req {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.bell-icon {
+	color: #007bff;
+	padding: 10px;
+	background: #f0f0f0;
+	border-radius: 50%;
+}
+
+.friend-request-style {
+	list-style-type: none;
+	display: flex;
+	margin-bottom: 10px;
+	justify-content: space-between;
+}
+
+.user-nickname {
+	font-weight: 600;
+	padding: 0 5px;
+}
+
+.user-container {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+.user-container img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.button-container {
+	display: flex;
+	justify-content: space-between;
+	/* margin: 10px; */
+	gap: 0.3rem;
+}
+
+.accept-button,
+.decline-button {
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	transition:
+		background-color 0.3s,
+		color 0.3s;
+}
+
+.accept-button {
+	background-color: #4caf50; /* Green */
+	color: white;
+}
+
+.decline-button {
+	background-color: #f44336; /* Red */
+	color: white;
+}
+
+.accept-button:hover,
+.decline-button:hover {
+	filter: brightness(1.2); /* Increase brightness on hover */
+}

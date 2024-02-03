@@ -1,0 +1,72 @@
+.back-arrow {
+	padding: 0.4rem;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.back-arrow:hover {
+	background-color: hsla(207, 4%, 46%, 0.08);
+	border-radius: 50%;
+}
+
+.new-channel_title {
+	font-size: 1.25rem;
+	margin-left: 20px;
+	padding-top: 0.2rem;
+}
+
+.create-channel-name {
+	align-items: center;
+	margin-bottom: 10px;
+	padding-top: 40px;
+}
+
+.create-channel-name label {
+	font-size: 16px;
+	margin: 10px;
+	color: #333;
+}
+
+.create-channel-name input {
+	margin: 10px 10px;
+	padding: 8px;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 12px;
+	width: 85%;
+}
+
+.create-channel-name input:focus {
+	border-color: #3498db; /* Change the border color when the input is focused */
+	outline: none;
+}
+
+/* Style the label text when the input is focused */
+.create-channel-name input:focus + label {
+	color: #3498db;
+}
+
+.create-chan-priv {
+	margin-left: 10px;
+}
+
+.create-password {
+	margin-top: 10px;
+}
+
+.create-channel button {
+	appearance: none;
+	border: none;
+	margin: 0;
+	padding: 20px;
+	background-color: transparent;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: pointer;
+	outline: none;
+}
+
+.create-channel button:disabled {
+	cursor: not-allowed;
+}

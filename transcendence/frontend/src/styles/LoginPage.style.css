@@ -1,0 +1,154 @@
+body {
+	background-color: #282c34;
+}
+.main {
+	margin: auto;
+	max-width: 100vw;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+	padding-top: 50px;
+}
+
+.link-redirect {
+	display: flex;
+	justify-content: center;
+}
+
+.link-redirect a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 20px;
+	box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+	background: #087ea4;
+	padding: 15px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.link-redirect a:hover {
+	transform: scale(1.1);
+}
+
+.login-canvas {
+	width: 75vw;
+	height: 80vh;
+}
+
+@media (max-width: 390px) {
+	.main img {
+		height: 100vh;
+	}
+	.link-redirect {
+		font-size: 14px;
+		bottom: 30px;
+		right: 80px;
+	}
+}
+
+@media (max-width: 1900px) {
+	.login-canvas {
+		width: 75vw;
+		height: 75vh;
+	}
+	.main {
+		height: 75vh;
+	}
+}
+@media (max-width: 1650px) {
+	.login-canvas {
+		width: 75vw;
+		height: 70vh;
+	}
+	.main {
+		height: 70vh;
+	}
+}
+
+@media (max-width: 1450px) {
+	.login-canvas {
+		width: 75vw;
+		height: 65vh;
+	}
+	.main {
+		height: 65vh;
+	}
+}
+
+@media (max-width: 1300px) {
+	.login-canvas {
+		width: 75vw;
+		height: 55vh;
+	}
+	.main {
+		height: 55vh;
+	}
+}
+
+@media (max-width: 1100px) {
+	.login-canvas {
+		width: 75vw;
+		height: 45vh;
+	}
+	.main {
+		height: 45vh;
+	}
+}
+
+@media (max-width: 950px) {
+	.login-canvas {
+		width: 80vw;
+		height: 40vh;
+	}
+	.main {
+		height: 40vh;
+	}
+}
+
+@media (max-width: 750px) {
+	.login-canvas {
+		width: 80vw;
+		height: 35vh;
+	}
+	.main {
+		height: 35vh;
+	}
+	.link-redirect a {
+		font-size: 17px;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 570px) {
+	.login-canvas {
+		width: 80vw;
+		height: 30vh;
+	}
+	.main {
+		height: 30vh;
+	}
+	.link-redirect a {
+		font-size: 16px;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 450px) {
+	.login-canvas {
+		width: 80vw;
+		height: 25vh;
+	}
+	.main {
+		height: 25vh;
+	}
+	.link-redirect a {
+		font-size: 14px;
+		padding: 10px;
+	}
+}
+/*#canvas {
+  background-image: url('../img/game1.jpeg');
+  background-size: cover; /* Adjust as needed */
+/**/

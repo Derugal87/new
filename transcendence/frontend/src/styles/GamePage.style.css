@@ -1,0 +1,123 @@
+/* GamePage.css */
+
+/* Style for the container holding the buttons */
+.appContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px; /* Adjust the gap between buttons */
+	margin-top: 20px;
+}
+
+/* Pop-up buttons container */
+.game-mode-buttons {
+	display: flex;
+	margin-bottom: 20px; /* Add some space between buttons and text */
+}
+
+/* Style for the buttons */
+.game-mode-create {
+	text-decoration: none;
+	padding: 15px 30px; /* Adjust button padding to make it bigger */
+	font-size: 18px; /* Adjust font size */
+	background-color: #007bff; /* Button background color */
+	color: white; /* Text color */
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease; /* Add a smooth transition for hover effect */
+	margin-right: 10px; /* Add spacing between buttons */
+	margin-top: 30px;
+
+	/* Hover effect */
+	&:hover {
+		background-color: #0056b3; /* Change background color on hover */
+	}
+}
+
+.game-mode-join {
+	text-decoration: none;
+	padding: 15px 30px; /* Adjust button padding to make it bigger */
+	font-size: 18px; /* Adjust font size */
+	background-color: #b85151; /* Button background color */
+	color: white; /* Text color */
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease; /* Add a smooth transition for hover effect */
+	margin-right: 10px; /* Add spacing between buttons */
+	margin-top: 30px;
+
+	/* Hover effect */
+	&:hover {
+		background-color: #d61832; /* Change background color on hover */
+	}
+}
+
+/* Additional text container */
+.game-text {
+	/* Background color for the text container */
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Box shadow for a card-like effect */
+	width: 75%;
+}
+
+/* Centered text */
+.centered-text {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* Style the list items */
+.game-text ul {
+	list-style: disc;
+	margin-left: 20px;
+}
+
+/* Style the list items within the text container */
+.game-text ul li {
+	margin-bottom: 10px;
+}
+
+/* Additional styling for the strong elements */
+.game-text strong {
+	font-weight: bold;
+	color: #b85151; /* Red color for strong elements */
+}
+
+.app-settings {
+	width: 30%;
+	padding: 0 20px;
+}
+
+@media (max-width: 800px) {
+	.centered-text {
+		font-size: 19px;
+	}
+
+	.game-mode-buttons {
+		margin-bottom: 10px;
+	}
+	.game-mode-create {
+		padding: 10px 25px; /* Adjust button padding to make it bigger */
+		font-size: 16px; /* Adjust font size */
+	}
+
+	.game-mode-join {
+		padding: 10px 25px; /* Adjust button padding to make it bigger */
+		font-size: 16px; /* Adjust font size */
+	}
+}
+
+@media (max-width: 500px) {
+	.game-mode-create {
+		margin-top: 0;
+		font-size: 14px;
+	}
+
+	.game-mode-join {
+		margin-top: 0;
+		font-size: 14px;
+	}
+}

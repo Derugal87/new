@@ -1,0 +1,158 @@
+.header-user-info {
+	position: relative;
+	background-color: var(--whiteColor);
+	padding: 0 1rem;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	border: 1px solid rgb(198, 194, 194);
+	border-left: none;
+	border-top: none;
+}
+
+.header-user-info h3 {
+	text-transform: capitalize;
+	font-size: 1.4rem;
+	font-weight: 500;
+	flex: 1;
+}
+
+.cancel-user-info {
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+	width: 50px;
+}
+
+.close-faTimes {
+	width: 40px;
+	height: 22px;
+}
+
+.data-user-info {
+	position: relative;
+}
+
+.data-user-info h4 {
+	position: absolute;
+	text-transform: capitalize;
+	bottom: 0;
+	color: white;
+	font-size: 1.4rem;
+	padding: 0 10px;
+}
+
+.data-user-info img {
+	width: 100%;
+}
+
+.channel-members h3 {
+	margin: 10px;
+}
+
+.member {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.member-details {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.member-avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.member-nickname {
+	font-weight: bold;
+}
+
+/* Dropdown container */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+	background-color: #3498db;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	position: absolute;
+	z-index: 1;
+}
+
+.action-dropdown {
+	margin: 10px 10px 0 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content button {
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content button:hover {
+	background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.nav-friend-profile {
+	text-decoration: none;
+	color: #707579;
+	display: flex;
+	width: 100%;
+	justify-content: inherit;
+	padding: 5px 0px;
+}
+
+.nav-friend-profile:hover {
+	background-color: hsla(207, 4%, 46%, 0.08);
+	border-radius: 1rem;
+}
+
+.invite-game {
+	position: relative;
+	margin: 10px 0;
+}
+
+.invite-game .game-icon-tooltip {
+	position: absolute;
+	top: 20px; /* Adjust this value as needed to position the tooltip */
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #333;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	opacity: 0; /* Hide initially */
+	transition: opacity 0.3s ease-in-out;
+}
+
+.invite-game:hover .game-icon-tooltip {
+	opacity: 1; /* Show on hover */
+}

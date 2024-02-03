@@ -1,0 +1,31 @@
+.button-2fa {
+	text-decoration: none;
+	padding: 15px 30px; /* Adjust button padding to make it bigger */
+	font-size: 18px; /* Adjust font size */
+	background-color: #007bff; /* Button background color */
+	color: white; /* Text color */
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease; /* Add a smooth transition for hover effect */
+
+	/* Add margin and margin-bottom */
+	margin: 10px; /* Adjust as needed */
+	margin-bottom: 20px; /* Add space below the button */
+
+	/* Hover effect */
+	&:hover {
+		background-color: #0056b3; /* Change background color on hover */
+	}
+}
+
+@media (max-width: 500px) {
+	.Two_fa-title {
+		padding: 10px 20px; /* Adjust button padding to make it bigger */
+		font-size: 15px; /* Adjust font size */
+	}
+	.button-2fa {
+		padding: 10px 20px; /* Adjust button padding to make it bigger */
+		font-size: 15px; /* Adjust font size */
+	}
+}

@@ -1,0 +1,152 @@
+.popup {
+	/* display: none; */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
+
+.popup-content {
+	background-color: #fff;
+	padding: 20px;
+	max-width: 500px;
+	height: 350px;
+	width: 100%;
+	text-align: center;
+	border-radius: 15px;
+	position: relative;
+}
+
+.edit-image {
+	padding: 20px 0;
+	display: flex;
+}
+
+.edit-image label {
+	font-size: 20px;
+	padding-left: 85px;
+	padding-right: 10px;
+}
+
+.edit-name {
+	padding: 0 20px 20px 20px;
+	display: inline-block;
+}
+.edit-name label {
+	font-size: 20px;
+	padding-right: 165px;
+}
+.text-input {
+	padding: 8px 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+.text-input:focus {
+	outline: none;
+	border-color: #4a90e2;
+	box-shadow: 0 0 4px rgba(74, 144, 226, 0.5);
+}
+
+.cancel-icon {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	border: none;
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+.cancel-icon img {
+	width: 20px;
+	cursor: pointer;
+}
+
+.buttons {
+	position: absolute;
+	bottom: 38px;
+	right: 85px;
+}
+
+.save {
+	background-image: linear-gradient(to top, #007991, #78ffd6);
+	color: white;
+	border: none;
+	padding: 7px 12px;
+	border-radius: 14px;
+	font-size: 20px;
+	margin-right: 20px;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.save.disabled {
+	cursor: none;
+}
+
+.cancel {
+	background-image: linear-gradient(to bottom, #ff416c, #ff4b2b);
+	color: white;
+	border: none;
+	padding: 7px 12px;
+	border-radius: 14px;
+	font-size: 20px;
+	margin-right: 20px;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+@media (max-width: 500px) {
+	.save {
+		padding: 5px 8px;
+		border-radius: 10px;
+		font-size: 15px;
+		margin-right: 20px;
+	}
+	.cancel {
+		padding: 5px 8px;
+		border-radius: 10px;
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 800px) {
+	.save {
+		padding: 5px 8px;
+		border-radius: 10px;
+		font-size: 17px;
+		margin-right: 10px;
+	}
+	.cancel {
+		padding: 5px 8px;
+		border-radius: 10px;
+		font-size: 17px;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 540px) {
+	.popup-content-title {
+		font-size: 18px;
+	}
+	.cancel-icon img {
+		width: 15px;
+	}
+	.edit-image label {
+		font-size: 13px;
+		padding-left: 50px;
+		padding-right: 10px;
+	}
+	.edit-name label {
+		font-size: 13px;
+		padding-right: 0px;
+	}
+}
